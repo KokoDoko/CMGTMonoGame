@@ -1,8 +1,6 @@
 # CMGTMonoGame
 Files for CMGT Monogame Course
 
-These folders contain files for CMGT Monogame projects
-
 # How to use
 Each folder only contains the .cs files and content files (images, sounds) that you need in your Xamarin or Visual Studio project.
 
