@@ -1,13 +1,18 @@
-# CMGTMonoGame
-Files for CMGT Monogame Course
+# Week 1
+Files for the 'CloseCall' assignment
 
-These folders contain files for CMGT Monogame projects
+# Basic
+The most basic version, containing files for the world, car and wheels. These files will show you:
+- How to load and display images
+- How to render text on screen.
+- How to check if two objects collide.
+- How to use speed and position to determine where to draw an image.
+
+# Detailed
+The detailed version has all of the above, plus:
+- A countdown
+- Sound
+- Option to scale images by code
 
 # How to use
-Each folder only contains the .cs files and content files (images, sounds) that you need in your Xamarin or Visual Studio project.
-
-- Create a new Xamarin or Visual Studio project for Monogame
-- Download the .cs and image files as a zip
-- Place the downloaded files in your project folder. Place images in the content folder
-- You can overwrite Game1.cs
-- Don't forget to add the files to your project, and make sure they all get compiled (check properties or build action).
+See main page for explanation on how to integrate .cs and image files into your project
