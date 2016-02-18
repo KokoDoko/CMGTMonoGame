@@ -23,6 +23,7 @@ namespace CloseCall
             _counter        = 3;
             _scale          = 5;
             _text           = "3";
+
             _visible        = true;
             CountDownFinished  = false;
             _spVerdana      = Game1.instance.Content.Load<SpriteFont>("Verdana");
