@@ -18,6 +18,7 @@ namespace CloseCall
 
         public bool CountDownFinished  { get; set; }
        // public bool Active          { get; set; }
+       // hallo bob hoe is het
 
         public Counter()
         {
@@ -25,6 +26,7 @@ namespace CloseCall
             _scale          = 5;
             _text           = "3";
             //Active          = true;
+            // hier staat iets wat eigenlijk gewoon weg kan
             _visible        = true;
             CountDownFinished  = false;
             _spVerdana      = Game1.instance.Content.Load<SpriteFont>("Verdana");
@@ -46,6 +48,7 @@ namespace CloseCall
                     CountDownFinished = true;
                     _text = "GO!";
                     //Active = false;
+                    // dit maag ook weg
                 }
                 else if (_counter == -1)
                 {
