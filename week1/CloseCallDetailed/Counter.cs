@@ -17,14 +17,12 @@ namespace CloseCall
         private SpriteFont  _spVerdana;
 
         public bool CountDownFinished  { get; set; }
-       // public bool Active          { get; set; }
 
         public Counter()
         {
             _counter        = 3;
             _scale          = 5;
             _text           = "3";
-            //Active          = true;
             _visible        = true;
             CountDownFinished  = false;
             _spVerdana      = Game1.instance.Content.Load<SpriteFont>("Verdana");
@@ -45,7 +43,6 @@ namespace CloseCall
                 {
                     CountDownFinished = true;
                     _text = "GO!";
-                    //Active = false;
                 }
                 else if (_counter == -1)
                 {
