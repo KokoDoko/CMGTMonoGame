@@ -22,6 +22,18 @@ public abstract class GameObject
     public Vector2   Origin     { get; set; } 
     public float     Scale      { get; set; }
 
+    public Rectangle Bounds
+    {
+        get
+        {
+            return new Rectangle(
+                (int)Position.X,
+                (int)Position.Y,
+                (int)(Texture.Width * Scale),
+                (int)(Texture.Height * Scale));
+        }
+    }
+
     public GameObject(Vector2 position)
     {
         Position = position;
