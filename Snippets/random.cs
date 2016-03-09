@@ -7,7 +7,7 @@ public World()
            
 }
 
-private void GenerateJunk()
+private void GenerateRandomThings()
 {
 
     //
@@ -20,7 +20,7 @@ private void GenerateJunk()
     //
     float randomAppearance = _random.NextDouble();
 
-    // als kleiner dan 0.02 betekent een kans van 2 procent
+    // als kleiner dan 0.02 --- betekent een kans van 2 procent
     if (randomAppearance < 0.02f)
     {
 
