@@ -22,7 +22,11 @@ private void CheckCollisions(){
 		{
 			if(object1 != object2 && HitBoxesIntersect(object1, object2))
 			{
-				// er is een collision tussen object1 en object2 !
+				// er is een collision tussen object1 en object2
+				object1.onCollision(object2);
+
+				// let op, de collision tussen object2 en object1 komt later in deze loop
+				// automatisch ook langs
 			}
 		}
 	}
