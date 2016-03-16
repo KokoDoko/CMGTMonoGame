@@ -11,7 +11,7 @@ public class Button : GameObject
     }
 
     //
-    // bij klik veranderen we het gedrag van de kat
+    // de update functie checkt of de muis binnen de bounds is, en is ingedrukt
     //
     public override void Update(GameTime gameTime){
         _mouse = Mouse.GetState();
