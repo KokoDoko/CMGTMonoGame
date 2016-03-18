@@ -1,34 +1,20 @@
-// *********************************************************************************************************************
-//
-//	WORLD.CS
-//
-// *********************************************************************************************************************
+// we maken de cursor texture static zodat iedereen de texture kan aanpassen
+public Texture2D Cursor { get; set; }
+public Vector2 CursorPos;
 
-class World
+private void Initialize()
 {
-	// we maken de cursor texture static zodat iedereen de texture kan aanpassen
-	public static Texture2D Cursor { get; set; }
-	public Vector2 CursorPos;
+	Cursor = Content.Load<Texture2D>("bluecursor");
+}
 
-	protected override void Initialize()
-	{
-		base.Initialize();
+public void Update(GameTime gameTime)
+{
+	// muispositie uitlezen
+	CursorPos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
+}
 
-		// texture voor cursor
-		World.Cursor = Content.Load<Texture2D>("bluecursor");
-	}
-
-	protected override void Update(GameTime gameTime)
-	{
-		// muispositie uitlezen
-		CursorPos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
-	}
-
-
-	protected override void Draw(GameTime gameTime)
-	{
-		// teken de cursor op de muispositie
-		spriteBatch.Draw(World.Cursor, CursorPos, Color.White);
-
-	}
+public void Draw(SpriteBatch spriteBatch)
+{
+	// teken de cursor op de muispositie
+	spriteBatch.Draw(Cursor, CursorPos, Color.White);
 }
