@@ -30,5 +30,9 @@ class World
 		// teken de cursor op de muispositie
 		spriteBatch.Draw(World.Cursor, CursorPos, Color.White);
 
+		// verandering om merge conflict te veroorzaken
+		// dit moet dus weg
+		spriteBatch.Draw(error);
+
 	}
 }
