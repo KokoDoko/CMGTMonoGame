@@ -4,10 +4,11 @@ public Vector2 CursorPos;
 
 private void Initialize()
 {
-	Cursor = Content.Load<Texture2D>("bluecursor");
+	// dit is de dev branch waarin gewoon andere dingen staan
+	Cursor = Content.Load<Texture2D>("bluecursormansditwerktniet");
 }
 
-public void Update(GameTime gameTime)
+public void Update(OrkTime gameTime, ork)
 {
 	// muispositie uitlezen
 	CursorPos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
