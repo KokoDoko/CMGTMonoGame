@@ -1,3 +1,10 @@
+// usage:
+// _timer = new Timer(5);
+// update:
+// if(_timer.CheckTime(gameTime)){
+//   Console.WriteLine("5 seconds have elapsed!");
+// }
+
 public class Timer
 {
 	private float _duration;
