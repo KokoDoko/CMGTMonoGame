@@ -1,14 +1,19 @@
-private float _elapsed;
+public class Timer
+{
+	private float _duration;
+	private float _elapsed = 0;
 
-public MyClass() {
-    _elapsed = 0f;
-}
+	public Timer(float d)
+	{
+		_duration = d;
+	}
 
-
-public override void Update(GameTime gameTime){
-    _elapsed += (float)gameTime.ElapsedGameTime.TotalSeconds;
-    if(_elapsed > 5) {
-        Console.WriteLine("er zijn 5 seconden voorbij");
-        _elapsed = 0;
-    }
+	public bool CheckTime(GameTime gameTime) {
+		_elapsed += (float)gameTime.ElapsedGameTime.TotalSeconds;
+		if(_elapsed > _duration) {
+			_elapsed = 0;
+			return true;
+		}
+		return false;
+	}
 }
